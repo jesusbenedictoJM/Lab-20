@@ -15,7 +15,7 @@ test('add user who is not in the list', () => {
 
 test('remove user who is not in the list does nothing', () => {
     let user = new User(2, "Bob", "bob@example.com");
-    // No se agrega el usuario
+    //  No agregamos el usuario, intentamos eliminarlo
     userController.remove(user);
     expect(userController.getUsers()).not.toContain(user);
 });
